@@ -1,3 +1,5 @@
+[![Build Status](https://travis-ci.org/oyedotunsodiq045/softoverflow.svg?branch=main)](https://travis-ci.org/oyedotunsodiq045/softoverflow)
+
 # SoftOverflow
 
 > SoftOverflow backend API.
