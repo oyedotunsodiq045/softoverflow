@@ -15,7 +15,13 @@ exports.getQuestions = asyncHandler(async (req, res, next) => {
 // @route   GET /api/v1/questions/:id
 // @access  Public
 exports.getQuestion = asyncHandler(async (req, res, next) => {
-  const question = await Question.findById(req.params.id);
+  const question = await Question.findById(req.params.id).populate({
+    path: 'answer',
+    select: {
+      solution: 1,
+      isSolution: 1
+    },
+  });
 
   if (!question) {
     return next(

@@ -12,6 +12,7 @@ const auth = require('./routes/auth');
 const questions = require('./routes/questions');
 const answers = require('./routes/answers');
 const ratings = require('./routes/ratings');
+const users = require('./routes/users');
 
 // Load env vars
 dotenv.config({
@@ -42,6 +43,7 @@ app.use('/api/v1/auth', auth);
 app.use('/api/v1/questions', questions);
 app.use('/api/v1/answers', answers);
 app.use('/api/v1/ratings', ratings);
+app.use('/api/v1/users', users);
 
 app.use(errorHandler);
 

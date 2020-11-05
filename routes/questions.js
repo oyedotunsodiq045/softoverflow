@@ -24,8 +24,7 @@ router.use('/:questionId/ratings', ratingRouter);
 
 router
   .route('/')
-  // .get(advancedResults(Question, 'answers'), getQuestions)
-  .get(advancedResults(Question), getQuestions)
+  .get(advancedResults(Question, 'answers'), getQuestions)
   .post(protect, askQuestion);
 
 router
