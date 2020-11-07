@@ -5,7 +5,7 @@ const moment = require('moment');
 const { clearKey } = require("../middleware/cache");
 
 // @desc    Get all Users
-// @route   GET /api/v1/admin/users
+// @route   GET /api/v1/users
 // @access  Private
 exports.getUsers = asyncHandler(async (req, res, next) => {
   res.status(200).json(res.advancedResults);

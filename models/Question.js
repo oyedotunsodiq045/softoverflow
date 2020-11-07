@@ -5,6 +5,7 @@ const QuestionSchema = new Schema({
   question: {
     type: String,
     required: [true, 'Please add a question'],
+    minlength: [5, 'Question can not be less than 5 characters'],
     maxlength: [1000, 'Question can not be more than 500 characters']
   },
   categories: {
