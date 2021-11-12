@@ -2,7 +2,7 @@
 
 # SoftOverflow
 
-> SoftOverflow backend API.
+> SoftOverflow backend API. [GitHub Repo](https://github.com/oyedotunsodiq045/softoverflow).
 
 ## Quick Start
 
